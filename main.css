@@ -1,0 +1,131 @@
+.header {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    background-color : lightpink; 
+    padding: 25px;  
+    opacity: 0;
+    animation: SlideAndFadeIn 1.2s ease-in-out forwards ;
+}
+
+@keyframes SlideAndFadeIn{
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+body {
+    background: linear-gradient(to bottom, #ffc0cb, #e4c0ff);
+    min-height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.quiz-container {
+    max-width: 650px;
+    background-color: snow;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+    border-radius: 60px;
+}
+
+.question {
+    font-family: cursive;
+    margin-top:  19px;
+    margin-bottom: 10px ;
+    font-weight: bold;
+    margin: 20px;
+    line-height: 20px;
+}
+
+.start-btn {
+    font-family: cursive;
+    border-radius: 40px;
+    padding: 8px;
+}
+
+/*
+margin = outer spacing
+padding = inner spacing
+*/
+
+.progress-bar-container {
+    height: 18px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 30px;
+}
+
+.progress-bar {
+    height: 18px;
+    background-color: rgb(175, 238, 181);
+    border-radius: 30px;
+    width: 50%;
+}
+
+.timer {
+    background-color:lightcyan ;
+    color: black;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 80%;
+    padding: 80px 60px ;
+    font-size: 48px;
+    margin-top: 50px;
+    font-family: cursive;
+}
+
+.option-container {
+    margin: 15px;
+    height: fit-content;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: lemonchiffon;
+    border: none;
+    height: 50px;
+    font-family: cursive;
+    border-radius: 70px;
+    cursor: pointer;
+}
+ 
+.option-btn:hover {
+    background-color: rgb(255, 226, 60);
+}
+
+.result {
+    font-family: cursive;
+    font-weight: 500;
+    background-color: lemonchiffon;
+    margin-top: 35px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 248, 237);
+    color: #000;
+}
+.media-player {
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+}
